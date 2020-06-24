@@ -1,0 +1,14 @@
+syntax = "proto3";
+package communications;
+
+message ReqName {
+    string name = 1;
+}
+
+message Resp {
+	string status = 1;
+}
+
+service Communicator {
+    rpc TransferData(ReqName) returns (Resp) {}
+}
