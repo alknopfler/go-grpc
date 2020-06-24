@@ -1,6 +1,7 @@
 syntax = "proto3";
 package communications;
 
+
 message ReqName {
     string name = 1;
 }
